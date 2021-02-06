@@ -1,0 +1,62 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body,html{
+    height:100%;
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: darkslategray;
+}
+
+ h1{
+    font-family: fantasy;
+    text-align: center;
+    color:orange;
+}
+
+#forme{
+    display: flex;
+    flex-direction: column;
+    margin:200px;
+    height: 250px;
+    width:250px;
+    box-shadow: 5px 5px 5px black;
+    background-color: #cecece;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+#res {
+    background-color: orange;
+    color:darkslategrey
+}
+
+#forme input{
+    width:50%;
+}
+
+
+#list {
+    opacity: 0;
+    visibility: hidden;
+    transition:opacity 0.8s, visibility 0.8s, transform 1s ;
+    transform: scale(1);
+}
+
+#list.show{
+    opacity: 1;
+    visibility: visible ;
+    transform: scale(1.4);
+}
+
+li{
+    color:darkslategray;
+}
+
